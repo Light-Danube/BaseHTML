@@ -1,3 +1,4 @@
+/*DESKTOP & RESPONSIBLE SETTINGS*/
 body {
   display: flex;
   justify-content: center;
@@ -5,10 +6,11 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
 }
 
+/*For whole page*/
 .resumepage {
   background-color: #ffffff;
   display: flex;
@@ -39,6 +41,7 @@ body {
   left: 0;
 }
 
+/*For side panel-general*/
 .resumepage .side-panel {
   position: absolute;
   width: 163px;
@@ -66,33 +69,7 @@ body {
   object-fit: cover;
 }
 
-.resumepage .frame-border {
-  position: absolute;
-  width: 593px;
-  height: 1px;
-  top: 0;
-  left: 5px;
-  object-fit: cover;
-}
-
-.resumepage .frame-border-2 {
-  width: 1px;
-  height: 842px;
-  top: 0;
-  left: 599px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.resumepage .frame-border-3 {
-  width: 1px;
-  height: 841px;
-  top: 1px;
-  left: 167px;
-  position: absolute;
-  object-fit: cover;
-}
-
+/*JOB EXPERIENCE*/
 .resumepage .job {
   position: absolute;
   width: 438px;
@@ -110,7 +87,7 @@ body {
   font-family: "Krona One", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -124,7 +101,7 @@ body {
   font-family: "Krona One", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 15px;
+  font-size: 0.85em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -133,7 +110,7 @@ body {
   font-family: "Krona One", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 0;
 }
 
@@ -177,6 +154,7 @@ body {
   object-fit: cover;
 }
 
+/*EDUCATION*/
 .resumepage .education {
   position: absolute;
   width: 440px;
@@ -623,7 +601,7 @@ body {
   font-family: "Krona One", Helvetica, cursive;
   font-weight: 400;
   color: #000000;
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: right;
   letter-spacing: 0;
   line-height: normal;
@@ -638,7 +616,7 @@ body {
   font-family: "Krona One", Helvetica, cursive;
   font-weight: 400;
   color: #000000;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
 }
