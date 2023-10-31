@@ -1,3 +1,4 @@
+/* Base styles for larger screens */
 body {
   display: flex;
   justify-content: center;
@@ -616,45 +617,94 @@ body {
   line-height: normal;
 }
 
+/*HIDING ELEMENTS*/
+.resumepage .portfolio-photo-end-add {
+  display: none;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+  /* Adjust the width to take up the full screen width */
   .resumepage {
     width: 100%;
   }
-  
-  .resumepage .job-experience, .resumepage .computer-vision, .resumepage .undergraduate, .resumepage .tech-soft-skills, .resumepage .tech-skills-python-c, .resumepage .adress, .resumepage .contacts, .resumepage .achievements, .resumepage .hobby, .resumepage .developed-stable, .resumepage .traveling-mushroom, .resumepage .SOKRUT-DANYLO, .resumepage .STUDENT {
-    font-size: 12px;
-    line-height: 1.2;
+
+  body {
+    font-size: 10px;
   }
 
-  /* You may need to adjust the position, top, and left properties to reorganize elements */
-  .resumepage .job {
-    top: 90px; /* Adjust the top position */
-  }
-
-  .resumepage .line {
-    top: 50px; /* Adjust the top position */
-  }
-  /* Reorganize elements for smaller screens */
-  .resumepage .achievements {
+  /* Reorganize elements to fit the smaller screen */
+  .resumepage .feats {
     position: absolute;
-    top: 220px; /* Adjust the position as needed */
-    left: 5px; /* Adjust the position as needed */
+    width: 165px;
+    height: 37px;
+    top: 70px; /* Adjust the position to fit the layout */
+    left: 3px;
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
   }
 
   .resumepage .hobby {
     position: absolute;
-    top: 220px; /* Adjust the position as needed */
-    left: 220px; /* Adjust the position as needed */
+    width: 165px;
+    height: 37px;
+    top: 227px; /* Adjust the position to place it under "FEATS" */
+    left: 3px; /* Keep the same left position */
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resumepage .traveling-mushroom {
+    position: absolute;
+    width: 170px;
+    top: 287px; /* Adjust the position to place it under "FEATS" */
+    left: 3px;
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
   }
 
   .resumepage .SOKRUT-DANYLO {
-    top: 320px; /* Adjust the position as needed */
-    left: 5px; /* Adjust the position as needed */
+    font-size: 12px;
+    line-height: 1.2;
+    left: -12px;
+    top: 40px;
+    text-align: left; /* Center the text under "STUDENT" */
   }
 
   .resumepage .STUDENT {
-    top: 320px; /* Adjust the position as needed */
-    left: 220px; /* Adjust the position as needed */
+    left: -12px;
+    font-size: 12px; /* Adjust the font size as needed */
+    /* Additional adjustments if needed */
+  }
+
+  .resumepage .portfolio-photo-end-add {
+    top: 875px;
+    position: absolute;
+    width: 163px;
+    height: 157px;
+    left: 4px;
+    object-fit: cover;
+  }
+
+  .resumepage .side-panel {
+    position: absolute;
+    width: 163px;
+    height: 1500px;
+    top: 0;
+    left: 4px;
+    background-color: #fed8b3;
   }
 }
+
