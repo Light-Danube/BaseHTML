@@ -621,19 +621,40 @@ body {
   .resumepage {
     width: 100%;
   }
-
-  .job-experience, .computer-vision, .undergraduate, .tech-soft-skills, .tech-skills-python-c, .adress, .contacts, .achievements, .hobby, .developed-stable, .traveling-mushroom, .SOKRUT-DANYLO, .STUDENT {
+  
+  .resumepage .job-experience, .resumepage .computer-vision, .resumepage .undergraduate, .resumepage .tech-soft-skills, .resumepage .tech-skills-python-c, .resumepage .adress, .resumepage .contacts, .resumepage .achievements, .resumepage .hobby, .resumepage .developed-stable, .resumepage .traveling-mushroom, .resumepage .SOKRUT-DANYLO, .resumepage .STUDENT {
     font-size: 12px;
     line-height: 1.2;
   }
 
   /* You may need to adjust the position, top, and left properties to reorganize elements */
-  .job {
+  .resumepage .job {
     top: 90px; /* Adjust the top position */
   }
 
-  .line {
+  .resumepage .line {
     top: 50px; /* Adjust the top position */
   }
-  /* Adjust the position, top, and left properties as needed for reorganization */
+  /* Reorganize elements for smaller screens */
+  .resumepage .achievements {
+    position: absolute;
+    top: 220px; /* Adjust the position as needed */
+    left: 5px; /* Adjust the position as needed */
+  }
+
+  .resumepage .hobby {
+    position: absolute;
+    top: 220px; /* Adjust the position as needed */
+    left: 220px; /* Adjust the position as needed */
+  }
+
+  .resumepage .SOKRUT-DANYLO {
+    top: 320px; /* Adjust the position as needed */
+    left: 5px; /* Adjust the position as needed */
+  }
+
+  .resumepage .STUDENT {
+    top: 320px; /* Adjust the position as needed */
+    left: 220px; /* Adjust the position as needed */
+  }
 }
