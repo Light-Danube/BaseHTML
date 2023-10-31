@@ -634,11 +634,24 @@ body {
   }
 
   /* Reorganize elements to fit the smaller screen */
-  .resumepage .feats {
+  .resumepage .hobby {
     position: absolute;
     width: 165px;
     height: 37px;
-    top: 70px; /* Adjust the position to fit the layout */
+    top: 227px; /* Adjust the position to place it under "FEATS" */
+    left: 3px; /* Keep the same left position */
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resumepage .traveling-mushroom {
+    position: absolute;
+    width: 170px;
+    top: 287px; /* Adjust the position to place it under "FEATS" */
     left: 3px;
     font-family: "Krona One", Helvetica;
     font-weight: 400;
@@ -648,6 +661,71 @@ body {
     line-height: normal;
   }
 
+  .resumepage .SOKRUT-DANYLO {
+    font-size: 8px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    left: -12px;
+    top: 40px;
+    text-align: center; /* Center the text under "STUDENT" */
+  }
+
+  .resumepage .STUDENT {
+    left: -12px;
+    font-size: 12px; /* Adjust the font size as needed */
+    /* Additional adjustments if needed */
+  }
+
+  .resumepage .portfolio-photo-end-add {
+    top: 875px;
+    position: absolute;
+    width: 163px;
+    height: 157px;
+    left: 4px;
+    object-fit: cover;
+  }
+
+  .resumepage .side-panel {
+    position: absolute;
+    width: 163px;
+    height: 1000px;
+    top: 0;
+    left: 4px;
+    background-color: #fed8b3;
+  }
+
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    max-width: 320px;
+    word-wrap: break-word; /* Allow long words to break into new lines */
+  }
+
+  /* Ensure text elements start on new lines */
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    display: block;
+    white-space: normal;
+  }
+}
+
+
+@media screen and (max-width: 820px) {
+  /* Adjust the width to take up the full screen width */
+  .resumepage {
+    width: 100%;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  /* Reorganize elements to fit the smaller screen */
   .resumepage .hobby {
     position: absolute;
     width: 165px;
@@ -701,10 +779,119 @@ body {
   .resumepage .side-panel {
     position: absolute;
     width: 163px;
-    height: 1500px;
+    height: 1000px;
     top: 0;
     left: 4px;
     background-color: #fed8b3;
   }
+
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    max-width: 320px;
+    word-wrap: break-word; /* Allow long words to break into new lines */
+  }
+
+  /* Ensure text elements start on new lines */
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    display: block;
+    white-space: normal;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  /* Adjust the width to take up the full screen width */
+  .resumepage {
+    width: 100%;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  /* Reorganize elements to fit the smaller screen */
+  .resumepage .hobby {
+    position: absolute;
+    width: 165px;
+    height: 37px;
+    top: 227px; /* Adjust the position to place it under "FEATS" */
+    left: 3px; /* Keep the same left position */
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resumepage .traveling-mushroom {
+    position: absolute;
+    width: 170px;
+    top: 287px; /* Adjust the position to place it under "FEATS" */
+    left: 3px;
+    font-family: "Krona One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resumepage .SOKRUT-DANYLO {
+    font-size: 12px;
+    line-height: 1.2;
+    left: -12px;
+    top: 40px;
+    text-align: left; /* Center the text under "STUDENT" */
+    word-wrap: break-word;
+  }
+
+  .resumepage .STUDENT {
+    left: -12px;
+    font-size: 12px; /* Adjust the font size as needed */
+    /* Additional adjustments if needed */
+  }
+
+  .resumepage .portfolio-photo-end-add {
+    top: 875px;
+    position: absolute;
+    width: 163px;
+    height: 157px;
+    left: 4px;
+    object-fit: cover;
+  }
+
+  .resumepage .side-panel {
+    position: absolute;
+    width: 163px;
+    height: 1000px;
+    top: 0;
+    left: 4px;
+    background-color: #fed8b3;
+  }
+
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    max-width: 320px;
+    word-wrap: break-word; /* Allow long words to break into new lines */
+  }
+
+  /* Ensure text elements start on new lines */
+  .resumepage .computer-vision,
+  .resumepage .undergraduate,
+  .resumepage .state-university-of,
+  .resumepage .courses-coursera,
+  .resumepage .example-university {
+    display: block;
+    white-space: normal;
+  }
+}
